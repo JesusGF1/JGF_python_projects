@@ -1,0 +1,1 @@
+No indexar la del nombre del hombre ni la del account manager, churn es lo que queremos predecir
