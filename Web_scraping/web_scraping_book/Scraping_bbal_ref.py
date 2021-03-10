@@ -7,7 +7,7 @@ Created on Sun Mar  7 09:53:33 2021
 #%%
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-import re
+#import re
 import pandas as pd
 
 
@@ -28,6 +28,7 @@ print(bs.find("div", {'id':'div_teams_active'}))
 tabla = pd.read_html(str(bs.find("div", {'id':'div_teams_active'})))[0] #Tabla con datos generales sobre los equipos
 
 #%% url of the teams
+
 #print(bs.find("div", {'id':'div_teams_active'}).findAll("a"))
 teams = bs.find("div", {'id':'div_teams_active'}).findAll("a")
 
